@@ -1,8 +1,9 @@
 # DOE 23 Discord bot
 ![discord bot](https://miro.medium.com/v2/resize:fit:481/1*yKCbOTFZ5yQmQCOPt8PX4g.jpeg)
 
-- [How to participate](#how-to-participate)
-- [Things to keep in mind](#things-to-keep-in-mind)
+- [DOE 23 Discord bot](#doe-23-discord-bot)
+  - [Dev Setup](#dev-setup)
+  - [Things to keep in mind](#things-to-keep-in-mind)
 
 
 ## Dev Setup
@@ -16,6 +17,28 @@
         *  Windows PS: `PS> <venv>\Scripts\Activate.ps1`
 4. Run `$ pip install -r requirements.txt`
 5. Everything should be good to go. If you have any problems message me on discord `@soup`
+
+> [!IMPORTANT] FOR CREDENTIALS
+> You need to create a folder called `/cred` in the root directory with a file called `bot_token`. In this file you can put your own bot's token if you want to debug and test it out on your own server. The `.gitignore` will automaticly ingore any file put in `/cred` 
+>
+> ***DO NOT PUT ANY CREDENTIALS IN THE REPO WHEN PUSHING, <ins>THE REPO IS PUBLIC</ins> AND YOU ARE THE ONLY ONE WHO IS RESPONSIBLE FOR HOW YOU USE YOUR TOKENS.***
+
+Your folder structure should look something like this:
+```
+DOE23-DISCORD-BOT
+--.git
+  --...
+
+--/cred
+  --bot_token
+
+--/src
+  --main.py
+
+--.gitignore
+--README.md
+--requirements.txt
+```
 
 ---
 
