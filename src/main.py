@@ -37,5 +37,7 @@ async def test_command(interaction:discord.Interaction):
     """
     await interaction.response.send_message("Here is the repo:\nhttps://github.com/McTeaCup/DOE23-discord-bot")
 
-with open (BOT_TOKEN_PATH, 'r') as token:
-    client.run(token.read())
+client.run(os.environ["DISCORD_TOKEN"])
+
+#with open (BOT_TOKEN_PATH, 'r') as token:
+#    client.run(token.read())
