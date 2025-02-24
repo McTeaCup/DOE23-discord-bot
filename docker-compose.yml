@@ -1,0 +1,11 @@
+services:
+  discord-bot:
+    image: mcteacup/doe23-bot:latest
+    environment:
+      - DISCORD_TOKEN=$DISCORD_TOKEN
+    networks:
+      - discord-bot-net
+
+networks:
+  discord-bot-net:
+    driver: bridge
